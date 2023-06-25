@@ -11,34 +11,36 @@
     </h:head>
     
     <h:body>
-        <div>
-        <h2>Micromercado ABC</h2>
-        <br></br>
-        <h:button value="Registrarse" outcome="registrarse" />
-        <h:button value="Login" outcome="login" />
-        <br></br>
+        <div  class="header">
+            <h2>Micromercado ABC</h2>
+            <br></br>
+            <h:button value="Registrarse" outcome="registrarse" />
+            <h:button value="Login" outcome="login" />
+            <br></br>
         </div>
-        
-        <div>
+        <div class="side-bar">
             <h3>Categorías</h3>
-            Aseo Hogar
-            Aseo Personal
-            Bebidas
-            ....
+            <div class="side-bar-list">
+                Aseo Hogar<br></br>
+                Aseo Personal<br></br>
+                Bebidas<br></br>
+                ....<br></br>
+            </div>
+            
+            
         </div>
         <br></br>
         
-        <div>
+        <div class="container-items">
             
         <h:form id="form1">
-            
-        <h:commandButton value = "Listar Productos" onclick = "alert('Listar Productos!');" /> 
-        <h:commandButton value = "Crear Producto" onclick = "alert('Crear Producto!');" /> 
-        <br></br>
-        <br></br>
+            <div class="container-products">
+            <h:commandButton styleClass="btn-producto" value = "Agregar" onclick = "alert('Producto1!');" /> 
+            <h:commandButton styleClass="btn-producto" value = "Agregar" onclick = "alert('Producto2');" /> 
+            </div>
         
-        <h:button value="Listado" outcome="listarProductos" />
-        <h:button value="Crear" outcome="crearProducto" />
+            <h:button styleClass="btn-all" value="Listado" outcome="listarProductos" />
+            <h:button styleClass="btn-all" value="Crear" outcome="crearProducto" />
         
         </h:form>
         </div>
