@@ -24,7 +24,10 @@
                 Aseo Hogar<br></br>
                 Aseo Personal<br></br>
                 Bebidas<br></br>
-                ....<br></br>
+                Despensa<br></br>
+                Frutas y Verduras<br></br>
+                Lácteos<br></br>
+                Otros<br></br>
             </div>
             
             
@@ -34,9 +37,38 @@
         <div class="container-items">
             
         <h:form id="form1">
+            
             <div class="container-products">
-            <h:commandButton styleClass="btn-producto" value = "Agregar" onclick = "alert('Producto1!');" /> 
-            <h:commandButton styleClass="btn-producto" value = "Agregar" onclick = "alert('Producto2');" /> 
+                <div className='item'>
+                    <img src="/img/Axion.jpg" width="200px" height="200px" alt="Axión"/>
+                    <div className='info-product'>
+			<h2>Producto1</h2>
+			<p className='price'>$5000</p>
+			<h:commandButton styleClass="btn-producto" value = "Agregar" 
+                            onclick = "alert('Producto1!')" /> 
+                    </div>
+		</div>
+            
+                <div className='item'>
+                    <img src="/img/Dove.jpg" width="200px" height="200px" alt="Dove"/>
+                    <div className='info-product'>
+			<h2>Producto2</h2>
+			<p className='price'>$5000</p>
+			<h:commandButton styleClass="btn-producto" value = "Agregar" 
+                            onclick = "alert('Producto2!')" /> 
+                    </div>
+		</div>
+            
+                <div className='item'>
+                    <img src="/img/LecheColanta.jpg" width="200px" height="200px" alt="Leche"/>
+                    <div className='info-product'>
+			<h2>Producto3</h2>
+			<p className='price'>$5000</p>
+			<h:commandButton styleClass="btn-producto" value = "Agregar" 
+                            onclick = "alert('Producto3!')" /> 
+                    </div>
+		</div>
+            
             </div>
         
             <h:button styleClass="btn-all" value="Listado" outcome="listarProductos" />
