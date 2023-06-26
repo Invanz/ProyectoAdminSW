@@ -178,7 +178,7 @@ img {
 /* Main */
 .container-items {
 	width: 75%;
-	display: grid;
+	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 	position: absolute;
@@ -188,6 +188,7 @@ img {
 
 .item {
 	border-radius: 10px;
+        max-width: 25%;
 }
 
 .item:hover {
@@ -202,7 +203,7 @@ img {
 	transition: all 0.5s;
 }
 
-.item figure {
+.item img {
 	overflow: hidden;
 }
 
@@ -246,6 +247,15 @@ img {
 
 .hidden {
 	display: none;
+}
+
+
+.btn-login {
+	padding: 10px;
+	border-radius: 3px;
+	font-family: inherit;
+	cursor: pointer;
+        font-size: 16px;
 }
 
 .btn-all {
@@ -301,4 +311,36 @@ img {
 .side-bar-list{
 	border-radius: 10;
 	color: darkblue;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.formLogin {
+    padding: 20px;
+	width: 40%;
+	position: absolute;
+	top: 160px;
+	left: 30%;
+}
+
+.formLogin p{
+    font-family: inherit;
+    font-size: 16px;
+    color: blue
+}
+
+.formLogin input{
+    width: 100%;
+    height: 3em;
 }

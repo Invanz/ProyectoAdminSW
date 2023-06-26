@@ -15,8 +15,24 @@
 
         <div id="content" class="center_content">
             <h1>Login</h1>
+        </div>
+        <h:form id="form">
+        <div class="formLogin">
+            <p> 
+                Usuario: <h:inputText id="usuario" value = "" />
+            </p>
+            
+            <p> 
+                Password: <h:inputText id="passw" value = "" />
+            </p>
+            
+            <h:commandButton styleClass="btn-producto" value = "Ingresar" 
+                            onclick = "alert('Login!')" /> 
+            <h:button styleClass="btn-all" value = "Registrarse" 
+                            outcome="registrarse" /> 
             
         </div>
+        </h:form>
 
     </h:body>
 

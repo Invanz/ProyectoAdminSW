@@ -14,8 +14,8 @@
         <div  class="header">
             <h2>Micromercado ABC</h2>
             <br></br>
-            <h:button value="Registrarse" outcome="registrarse" />
-            <h:button value="Login" outcome="login" />
+            <h:button styleClass="btn-login" value="Registrarse" outcome="registrarse" />
+            <h:button styleClass="btn-login" value="Login" outcome="login" />
             <br></br>
         </div>
         <div class="side-bar">
@@ -34,23 +34,23 @@
         </div>
         <br></br>
         
-        <div class="container-items">
+        
             
         <h:form id="form1">
-            
-            <div class="container-products">
-                <div className='item'>
-                    <img src="/img/Axion.jpg" width="200px" height="200px" alt="Axión"/>
+            <div class="container-items">
+                <div class="container-products">
+                <div className='item' >
+                    <img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/418390-300-300?v=1774006475" width="200px" height="200px" alt="Aceite"/>
                     <div className='info-product'>
 			<h2>Producto1</h2>
-			<p className='price'>$5000</p>
+			<p className='price'>$21.000</p>
 			<h:commandButton styleClass="btn-producto" value = "Agregar" 
                             onclick = "alert('Producto1!')" /> 
                     </div>
 		</div>
-            
-                <div className='item'>
-                    <img src="/img/Dove.jpg" width="200px" height="200px" alt="Dove"/>
+                </div> 
+                <div className='item two' style="grid-column: 2; grid-row: 1">
+                    <img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/400435-800-800?v=637962799114230000" width="200px" height="200px" alt="Dove"/>
                     <div className='info-product'>
 			<h2>Producto2</h2>
 			<p className='price'>$5000</p>
@@ -59,23 +59,21 @@
                     </div>
 		</div>
             
-                <div className='item'>
-                    <img src="/img/LecheColanta.jpg" width="200px" height="200px" alt="Leche"/>
+                <div className='item three' style="grid-column: 3; grid-row: 1">
+                    <img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/480163-300-300?v=1774047811" width="200px" height="200px" alt="Leche"/>
                     <div className='info-product'>
 			<h2>Producto3</h2>
-			<p className='price'>$5000</p>
+			<p className='price'>$19.000</p>
 			<h:commandButton styleClass="btn-producto" value = "Agregar" 
                             onclick = "alert('Producto3!')" /> 
                     </div>
 		</div>
             
-            </div>
-        
-            <h:button styleClass="btn-all" value="Listado" outcome="listarProductos" />
+             <h:button styleClass="btn-all" value="Listado" outcome="listarProductos" />
             <h:button styleClass="btn-all" value="Crear" outcome="crearProducto" />
-        
-        </h:form>
         </div>
+        </h:form>
+        
     </h:body>
 </html>
 
