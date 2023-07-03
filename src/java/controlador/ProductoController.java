@@ -24,5 +24,20 @@ public class ProductoController implements Serializable {
     }
   }
   
+  private void consultarProductoxID() {
+    try {
+      
+    } catch (Exception e) {
+      
+    }
+  }
+  
+  private void guardarProducto() {
+    try {
+      
+    } catch (Exception e) {
+      
+    }
+  }
   
 }
