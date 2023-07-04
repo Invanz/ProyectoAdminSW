@@ -48,4 +48,55 @@ public class ProductoControllerTest {
         //fail("The test case is a prototype.");
     }
     
+    @Test
+    public void testGuardar() {
+        System.out.println("guardar");
+        ProductoController instance = new ProductoController();
+        instance.init();
+        
+        boolean result = instance.guardarProducto();
+        boolean expResult=true;
+        assertEquals(expResult, result);
+        if(result!=expResult)
+            fail("Error al guardar producto.");
+    }
+
+    /**
+     * Test of cargarListas method, of class ProductoController.
+     */
+    @Test
+    public void testCargarListas() {
+        System.out.println("cargarListas");
+        ProductoController instance = new ProductoController();
+        instance.cargarListas();
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of consultarProductoxID method, of class ProductoController.
+     */
+    @Test
+    public void testConsultarProductoxID() {
+        System.out.println("consultarProductoxID");
+        ProductoController instance = new ProductoController();
+        instance.consultarProductoxID();
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of guardarProducto method, of class ProductoController.
+     */
+    @Test
+    public void testGuardarProducto() {
+        System.out.println("guardarProducto");
+        ProductoController instance = new ProductoController();
+        boolean expResult = true;
+        boolean result = instance.guardarProducto();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+       // fail("The test case is a prototype.");
+    }
+    
 }

@@ -16,7 +16,7 @@ public class ProductoController implements Serializable {
   /**
    * <b>Descripcion: </b>Carga las listas necesarias
    */
-  private void cargarListas() {
+  public void cargarListas() {
     try {
       
     } catch (Exception e) {
@@ -24,7 +24,7 @@ public class ProductoController implements Serializable {
     }
   }
   
-  private void consultarProductoxID() {
+  public void consultarProductoxID() {
     try {
       
     } catch (Exception e) {
@@ -32,11 +32,11 @@ public class ProductoController implements Serializable {
     }
   }
   
-  private void guardarProducto() {
+  public boolean guardarProducto() {
     try {
-      
+      return true;
     } catch (Exception e) {
-      
+      return false; 
     }
   }
   
